@@ -1,5 +1,9 @@
-#python code for generating md5 hash
+#!/usr/bin/python3
+
 import hashlib
-data=input("\nEnter the string to encrypt it into md5 hash : ") 
+
+
+data = input("Enter the string to encrypt it into md5 hash : ")
 result = hashlib.md5(data.encode())
-print("\nmd5 encypted string is",result.hexdigest(),"\n")
+
+print("Md5 encypted string is",result.hexdigest(),"\n")
